@@ -1,11 +1,11 @@
 import React from 'react'
-//import Card from '../Card/Card'
 import CardList from '../CardList/CardList'
+import "./Main.scss"
 
 const Main = () => {
   return (
     <div>
-        <CardList />
+        <CardList className="cardlist"/>
         
     </div>
   )
