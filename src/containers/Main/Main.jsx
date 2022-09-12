@@ -1,9 +1,13 @@
-import { useState } from "react"
-import React from 'react'
+import React, { useState } from 'react';
+import "./Main.scss";
+
+
+
+
 import SearchBox from "../../components/SearchBox/SearchBox";
 import CardList from "../../components/CardList/CardList";
 
-const ExploreBeers = (props) => {
+const Main = (props) => {
     const {beersArr} = props;
     const [searchTerm, setSearchTerm] = useState("");
 
@@ -27,4 +31,4 @@ const ExploreBeers = (props) => {
   )
 }
 
-export default ExploreBeers;
+export default Main;
