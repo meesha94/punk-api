@@ -27,4 +27,4 @@ const ExploreBeers = (props) => {
   )
 }
 
-export default ExploreBeers
+export default ExploreBeers;
