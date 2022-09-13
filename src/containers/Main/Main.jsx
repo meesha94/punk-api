@@ -6,7 +6,7 @@ const Main = ({beers}) => {
  
   return (
     <div>
-         <CardList title={"Results"} beers={beers}/>
+         <CardList title={"Results"} beers={beers} />
     </div>
   )
 }

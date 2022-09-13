@@ -32,12 +32,13 @@ getBeers()
 
   return (
     <div className="app">
-      <SearchBox
+      <SearchBox 
+        className="app__search-box"
         label={"beers"}
         searchTerm={searchTerm}
         handleInput={handleInput}
       />
-      <Navbar className="app__navbar" />
+      <Navbar className="app__navbar" ></Navbar>
 
       <Main className="app__main" beers={filteredBeers} />
     </div>

@@ -5,7 +5,7 @@ import "./CardList.scss";
 
 const CardList = ({ beers }) => {
   return (
-    <div>
+    <div className="beers-list">
       {beers?.map((beer) => {
         return (
           beer && (
