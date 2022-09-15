@@ -2,6 +2,7 @@ import React from 'react'
 
 const SearchBox = (props) => {
     const {label, searchTerm, handleInput } = props;
+
   return (
     <form className="search-box">
       <label htmlFor={label} className="search-box__label">

@@ -4,53 +4,55 @@ import Navbar from "./containers/Navbar/Navbar";
 import { useState, useEffect } from "react";
 import SearchBox from "./components/SearchBox/SearchBox";
 
+
 const App = () => {
   const [beers, setBeers] = useState([]);
+  //const [mainBeers, setMainBeers] = useState()
   const [searchTerm, setSearchTerm] = useState("");
+  const [filter, setFilter] = useState()
 
   const getBeers = async () => {
     const url = `https://api.punkapi.com/v2/beers`;
     const res = await fetch(url);
     const data = await res.json();
     setBeers(data);
+     //setMainBeers(beers);
+    // console.log(beers)
   };
 
   useEffect(() => {
-    getBeers();
-  }, []);
+    getBeers()
+  }, [])
 
   const handleInput = (event) => {
     const input = event.target.value.toLowerCase();
     setSearchTerm(input);
   };
 
-  const searchBeers = beers.filter((beer) => {
-    const beerNameLower = beer.name.toLowerCase();
-
-    return beerNameLower.includes(searchTerm) && beer.name;
-  });
-
-  const filterBeers = (event) => {
-    if (event.target.checked === true) {
-      
-        if (event.target.value === "High ABV") {
-         setBeers(beers.filter((beer) =>  beer.abv > 6
-        ))
-        
-      } else if (event.target.value === "Classic Range"){
-        setBeers(beers.filter((beer)=> parseInt(beer.first_brewed.slice(-4)) < 2010
-        ))
-      } else if (event.target.value === "Acidic") {
-        setBeers(beers.filter((beer) => beer.ph < 4
-        ))
-      }
-      
-    } else  {
-      return getBeers()
-    }
-
+  // const handleFilter = async (event) => {
+   
+  //   const checked = event.target.value 
     
-  }
+  //   await setFilter(checked)
+  //   console.log(filter)
+  // }
+
+  const searchBeers = () => { beers.filter((beer) => {
+    const beerNameLower = beer.name.toLowerCase();
+   
+      return beerNameLower.includes(searchTerm) && beer.name;
+  })
+}
+  // .filter((beer)=> {
+    
+  //   const beerABV = beer.abv > 6;
+   
+  //     return beerABV ;
+  // })
+//}
+  
+
+ 
 
   return (
     <div className="app">
@@ -60,11 +62,16 @@ const App = () => {
         searchTerm={searchTerm}
         handleInput={handleInput}
       />
-      <Navbar className="app__navbar" filterBeers={filterBeers}></Navbar>
+      <Navbar className="app__navbar"  >
+        
+      </Navbar>
 
-      <Main className="app__main" beers={searchBeers} />
+      <Main className="app__main" beers={beers} searchBeers={searchBeers}/>
+      
     </div>
   );
 };
 
-export default App;
+
+export default App  
+

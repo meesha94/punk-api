@@ -1,12 +1,13 @@
 import React from 'react'
 import FiltersList from '../../components/FiltersList/FiltersList'
 
-const Navbar = ({filterABV}) => {
+const Navbar = ({filterBeers}) => {
 
 
   return (
     <div className='navbar'>
-       <FiltersList filterABV={filterABV}/>
+       <FiltersList filterBeers={filterBeers}/>
+       
       
     </div>
   )

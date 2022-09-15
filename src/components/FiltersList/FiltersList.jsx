@@ -2,12 +2,12 @@ import React from 'react'
 import "./FiltersList";
 import FilterItem from '../FilterItem/FilterItem';
 
-const FiltersList = ({filterABV, filterClassic, filterPH }) => {
+const FiltersList = ({filterBeers }) => {
   return (
     <div>
-        <FilterItem value={"High ABV (> 6.0%)"} onClick={filterABV} />
-        <FilterItem value={"Classic Range"} onClick={filterClassic} />
-        <FilterItem value={"Acidic (ph < 4)"} onClick={filterPH} />
+        <FilterItem value={"High ABV"} filterBeers={filterBeers} />
+        <FilterItem value={"Classic Range"} filterBeers={filterBeers} />
+        <FilterItem value={"Acidic"} filterBeers={filterBeers} />
     </div>
   )
 }

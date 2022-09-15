@@ -14,6 +14,7 @@ const CardList = ({ beers }) => {
               image={beer.image_url}
               name={beer.name}
               info={beer.description}
+              abv={beer.abv}
             />
           )
         );
