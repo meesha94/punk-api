@@ -1,6 +1,5 @@
 import React from 'react'
-import FiltersList from '../../components/FiltersList/FiltersList';
-import "./Navbar.scss"
+import FiltersList from '../../components/FiltersList/FiltersList'
 
 const Navbar = ({filterBeers}) => {
 

@@ -1,71 +1,85 @@
-# Getting Started with Create React App
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3 align="center">punk-api</h3>
 
-## Available Scripts
+<div align="center">
 
-In the project directory, you can run:
+[![Status](https://img.shields.io/badge/status-active-success.svg)]()
+[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
-### `npm start`
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<p align="center"> Few lines describing your project.
+    <br> 
+</p>
 
-### `npm test`
+## 📝 Table of Contents
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [About](#about)
+- [Getting Started](#getting_started)
+- [Deployment](#deployment)
+- [Usage](#usage)
+- [Built Using](#built_using)
+- [TODO](../TODO.md)
+- [Contributing](../CONTRIBUTING.md)
+- [Authors](#authors)
+- [Acknowledgments](#acknowledgement)
 
-### `npm run build`
+## 🧐 About <a name = "about"></a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+React application using the Punk API, to display beers.the beer information given is the image, name and descritption. There is a search feature, which allows the user to search for beer by name, the diaplayed beers changes as each letter is typed into the search bar. There are three filter options, which when clicked show the user beers which match that specific filter. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🏁 Getting Started <a name = "getting_started"></a>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## 🔧 Running the tests <a name = "tests"></a>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Explain how to run the automated tests for this system.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Break down into end to end tests
 
-### Code Splitting
+Explain what these tests test and why
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+Give an example
+```
 
-### Analyzing the Bundle Size
+### And coding style tests
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Uses React testing library 
 
-### Making a Progressive Web App
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
 
-### Advanced Configuration
+## 🎈 Usage <a name="usage"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Add notes about how to use the system.
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+## ⛏️ Built Using <a name = "built_using"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# punk-api
+- [React](https://www.react.js/) - Web Framework
+
+
+## ✍️ Authors <a name = "authors"></a>
+
+- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
+
+See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
+
+
