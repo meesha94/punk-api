@@ -1,17 +1,15 @@
 .logo {
-    text-align: center;
-    
+  text-align: center;
 
-
-&__image {
-    width: 180px;
-    
-}
+  &__image {
+    width: 150px;
+    height: 70px;
+  }
 }
 
 .header {
-    &__image {
-        width: auto;
-        height:395px;
-    }
+  &__image {
+    width: auto;
+    height: 395px;
+  }
 }

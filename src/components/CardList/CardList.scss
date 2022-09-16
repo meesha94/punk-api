@@ -1,12 +1,9 @@
 .beers-list {
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   row-gap: 30px;
-   column-gap: 20px;
-   justify-content: space-evenly;
-   background-color: lightgray;
-   
-  
-    
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 20px;
+  justify-content: space-evenly;
+  background-color: lightgray;
 }

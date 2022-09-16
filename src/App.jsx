@@ -33,25 +33,19 @@ const App = () => {
 
   const filterBeers = (event) => {
     if (event.target.checked === true) {
-      
-        if (event.target.value === "High ABV") {
-         setBeers(beers.filter((beer) =>  beer.abv > 6
-        ))
-        
-      } else if (event.target.value === "Classic Range"){
-        setBeers(beers.filter((beer)=> parseInt(beer.first_brewed.slice(-4)) < 2010
-        ))
+      if (event.target.value === "High ABV") {
+        setBeers(beers.filter((beer) => beer.abv > 6));
+      } else if (event.target.value === "Classic Range") {
+        setBeers(
+          beers.filter((beer) => parseInt(beer.first_brewed.slice(-4)) < 2010)
+        );
       } else if (event.target.value === "Acidic") {
-        setBeers(beers.filter((beer) => beer.ph < 4
-        ))
+        setBeers(beers.filter((beer) => beer.ph < 4));
       }
-      
-    } else  {
-      return getBeers()
+    } else {
+      return getBeers();
     }
-
-    
-  }
+  };
 
   return (
     <div className="app">

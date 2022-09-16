@@ -5,7 +5,7 @@ import Card from "./Card";
 it("Should display beer cards", () => {
   render(<Card />);
 
-  const cards = screen.getAllByRole("name", {name: /Name/i});
+  const cards = screen.getAllByRole("name", { name: /Name/i });
 
   expect(cards).toBeInTheDocument();
 });

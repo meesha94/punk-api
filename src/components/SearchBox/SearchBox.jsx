@@ -1,14 +1,12 @@
-import React from 'react';
+import React from "react";
 import "./SearchBox.scss";
 
 const SearchBox = (props) => {
-    const {label, searchTerm, handleInput } = props;
+  const { label, searchTerm, handleInput } = props;
 
   return (
     <form className="search-box">
-      <label htmlFor={label} className="search-box__label">
-        
-      </label>
+      <label htmlFor={label} className="search-box__label"></label>
       <input
         type="text"
         name={label}
@@ -18,7 +16,7 @@ const SearchBox = (props) => {
         className="search-box__input"
       />
     </form>
-  )
-}
+  );
+};
 
-export default SearchBox
+export default SearchBox;

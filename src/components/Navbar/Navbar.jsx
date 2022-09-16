@@ -1,16 +1,12 @@
-import React from 'react'
-import FiltersList from '../../components/FiltersList/FiltersList'
+import React from "react";
+import FiltersList from "../../components/FiltersList/FiltersList";
 
-const Navbar = ({filterBeers}) => {
-
-
+const Navbar = ({ filterBeers }) => {
   return (
-    <div className='navbar'>
-       <FiltersList filterBeers={filterBeers}/>
-       
-      
+    <div className="navbar">
+      <FiltersList filterBeers={filterBeers} />
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
