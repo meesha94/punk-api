@@ -6,3 +6,21 @@
 .search-box {
   text-align: center;
 }
+
+@media screen and (max-width:320px){
+  .search-box__input {
+    width:70px;
+  }
+}
+
+@media screen and (min-width:330px)and (max-width:425px) {
+  .search-box__input{
+    width:50vw;
+  }
+}
+
+@media screen and (min-width:768px)and (max-width:1024px) {
+  .search-box__input{
+    width: 40vw;
+  }
+}

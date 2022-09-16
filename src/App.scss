@@ -7,3 +7,22 @@
   margin: 10px;
   background-color: lightgray;
 }
+@media screen and (max-width:320px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+    width:85vw;
+  }
+}
+
+@media screen and (min-width:330px)and (max-width:425px) {
+  .app {
+    width:115vw;
+  }
+}
+
+@media screen and (min-width:768px)and (max-width:1024px) {
+  .app{
+    width: 50vw;
+  }
+}

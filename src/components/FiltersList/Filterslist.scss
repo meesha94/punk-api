@@ -3,3 +3,23 @@
   flex-direction: row;
   column-gap: 10px;
 }
+
+@media screen and (max-width:320px){
+  
+    .filter-items {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      
+    }
+  
+
+  }
+
+  @media screen and (min-width:330px)and (max-width:425px) {
+    .filter-items{
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
