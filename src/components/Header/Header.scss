@@ -1,0 +1,17 @@
+.logo {
+    text-align: center;
+    
+
+
+&__image {
+    width: 180px;
+    
+}
+}
+
+.header {
+    &__image {
+        width: auto;
+        height:395px;
+    }
+}

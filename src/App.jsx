@@ -3,6 +3,7 @@ import Main from "./containers/Main/Main";
 import Navbar from "./containers/Navbar/Navbar";
 import { useState, useEffect } from "react";
 import SearchBox from "./components/SearchBox/SearchBox";
+import Header from "./components/Header/Header";
 
 const App = () => {
   const [beers, setBeers] = useState([]);
@@ -54,6 +55,7 @@ const App = () => {
 
   return (
     <div className="app">
+      <Header />
       <SearchBox
         className="app__search-box"
         label={"beers"}
